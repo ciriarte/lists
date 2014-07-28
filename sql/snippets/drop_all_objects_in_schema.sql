@@ -1,4 +1,5 @@
-DECLARE @schemaName VARCHAR(255)
+DECLARE @schemaName VARCHAR(255);
+SET @schemaName = 'schema_to_delete';
 
 SELECT 'DROP TABLE ' +
        QUOTENAME(OBJECT_SCHEMA_NAME(object_id)) + '.' +
