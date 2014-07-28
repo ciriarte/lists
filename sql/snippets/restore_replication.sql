@@ -12,10 +12,11 @@ select * from distribution..Mssubscriptions
 
 -- Take a look at the status column:
 
-0 = Inactive
-1 = subscribed
-2 = Active
-Then you can reactivate them by resetting the status to Active:
+-- 0 = Inactive
+-- 1 = subscribed
+-- 2 = Active
+
+-- Then you can reactivate them by resetting the status to Active:
 
 update distribution..Mssubscriptions set status = 2 where status = 0 and publisher_db = '<YourDB>'
 
