@@ -30,6 +30,6 @@ After doing this with as many child repos we want to have, we just add the remot
 tag=$(git describe --tags --always)
 #echo $tag
 
-find . -type f -name AssemblyInfo.cs -print0 | xargs -0 sed -in
+find . -type f -name AssemblyInfo.cs -print0 | xargs -0 sed -bn
 's/AssemblyInformationalVersion\(.*\)/AssemblyInformationalVersion\(\"'$tag'\"\)/g'
 ```
