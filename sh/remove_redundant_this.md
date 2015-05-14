@@ -1,1 +1,1 @@
-perl -i -p -e's/this\.//g' $(ag -f --csharp)
+perl -i -p -e's/this\.//g' $(ack -f --csharp)
